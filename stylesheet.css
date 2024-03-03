@@ -2,9 +2,10 @@
 
 body {
 
-    background-image: url("imgs/homePage_bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("imgs/montalbanomylove.png"), url("imgs/homePage_bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 950px, cover;
+    background-position-x: right;
 }
 
 
