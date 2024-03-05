@@ -2,7 +2,7 @@
 
 body {
 
-    background-image: url("imgs/homePage_bg.png");
+    background-image: url("./risorse/imgs/homePage_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
