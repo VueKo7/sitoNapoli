@@ -60,19 +60,20 @@ function downloadFILES() {
 
     let downloadBUTTON = document.getElementById("download");
 
+    if(filesToDownload.length > 0)
+    {
+        for(let i = 0; i < filesToDownload.length; i++) {
 
-    for(let i = 0; i < filesToDownload.length; i++) {
-
-        if(filesToDownload[i] == "pdf") {
-            downloadBUTTON.setAttribute('download', "Programma Viaggio di Istruzione Napoli.pdf");
-            downloadBUTTON.setAttribute('href', "./risorse/Programma Viaggio di Istruzione Napoli.pdf");
+            if(filesToDownload[i] == "pdf") {
+                downloadBUTTON.setAttribute('download', "Programma Viaggio di Istruzione Napoli.pdf");
+                downloadBUTTON.setAttribute('href', "./risorse/Programma Viaggio di Istruzione Napoli.pdf");
+            }
+            else if(filesToDownload[i] == "docx") {
+                downloadBUTTON.setAttribute('download', "Programma Viaggio di Istruzione Napoli.docx");
+                downloadBUTTON.setAttribute('href', "./risorse/Programma Viaggio di Istruzione Napoli.docx");
+            }
+            
+            downloadBUTTON.click();
         }
-        else if(filesToDownload[i] == "docx") {
-            downloadBUTTON.setAttribute('download', "Programma Viaggio di Istruzione Napoli.docx");
-            downloadBUTTON.setAttribute('href', "./risorse/Programma Viaggio di Istruzione Napoli.docx");
-        }
-        
-        downloadBUTTON.click();
-    }
-
+    } else {}
 }   

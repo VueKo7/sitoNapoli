@@ -12,29 +12,30 @@
 <body>
 
     <div>
-        <h1>Scarica il programma del viaggio</h1>
+        <h1 class="scaricabili">Scarica il programma del viaggio</h1>
         <h2>-seleziona il formato che desideri scaricare-</h2>
     </div>
 
-    <div>
-        <h1>...in formato PDF</h1>
-        <button onclick="download_selection('pdf')">
-            <img id="pdf" src="./risorse/imgs/pdf-icon.png" alt="pdf-img">
-        </button>
-    </div>
-    
-    <div>
-        <h1>...in formato DOCX</h1>
-        <button onclick="download_selection('docx')">
-            <img id="docx" src="./risorse/imgs/docx-icon.png" alt="docx-img">
-        </button>
-    </div>
-    <div>
-        <a id="download" href="" download="">
-            <button onclick="downloadFILES()">
-                Sarica!
+    <!--selezione dei file scaricabili-->
+    <div class="elementi-scaricabili">
+        <div class="scaricabili">
+            <h1 class="scaricabili">...in formato PDF</h1>
+            <button onclick="download_selection('pdf')">
+                <img class="scaricabili" id="pdf" src="./risorse/imgs/pdf-icon.png" alt="pdf-img">
             </button>
-        </a>
+        </div>
+        <div class="scaricabili">
+            <h1 class="scaricabili">...in formato DOCX</h1>
+            <button onclick="download_selection('docx')">
+                <img class="scaricabili" id="docx" src="./risorse/imgs/docx-icon.png" alt="docx-img">
+            </button>
+        </div>
+    </div>
+
+    <!--bottone di conferma, scarica i file selezionati-->
+    <div class="downloadBUTTON">
+        <button class="downloadBUTTON" onclick="downloadFILES()">Sarica!</button>
+        <a id="download" href="" download=""></a>
     </div>
 </body>
 </html>
