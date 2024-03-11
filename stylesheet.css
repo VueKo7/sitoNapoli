@@ -134,7 +134,32 @@ div.elementi-scaricabili {
     
     display: flex;
 }
-img.scaricabili { width: 50%; }
+img.scaricabili { 
+    width: 50%; 
+}
+
+button.downloadBUTTON {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    width: 100%;
+    height: 70px;
+}
+
+div.titolo-scaricabili {
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 25px;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
 
 
 

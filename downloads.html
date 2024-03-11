@@ -11,10 +11,66 @@
 </head>
 <body>
 
-    <div>
-        <h1 class="scaricabili">Scarica il programma del viaggio</h1>
+
+    <div class="titolo-scaricabili">
+        <h1 class="scaricabili">In questa pagina potrai Scaricare il programma del viaggio</h1>
         <h2>-seleziona il formato che desideri scaricare-</h2>
     </div>
+
+    <!--menu-bar | si ripeterà per ogni pagina forse-->
+    <table class="click-menu">
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz1'))">HomePage</div>
+                <div id="opz1" class="section">
+                    <p class="case"><a href="./homePage.html">HomePage</a></p>
+                    <p class="case"><a href="#why_naples">Perche' Napoli?</a></p>
+                    <p class="case"><a href="#viaggio">Presentazione Viaggio</a></p>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz2'))">Galleria</div>
+                <div id="opz2" class="section">
+                    <p class="case"><a href="example2.html">Executive Team</a></p>
+                    <p class="case"><a href="example2.html">Investors</a></p>
+                    <p class="case"><a href="example2.html">Career</a></p>
+                    <p class="case"><a href="example2.html">Press Center</a></p>
+                    <p class="case"><a href="example2.html">Success Stories</a></p>
+                    <p class="case"><a href="example2.html">Contact Us</a></p>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz3'))">Informazioni</div>
+                <div id="opz3" class="section">
+                    <p class="case"><a href="example2.html">Executive Team</a></p>
+                    <p class="case"><a href="example2.html">Investors</a></p>
+                    <p class="case"><a href="example2.html">Career</a></p>
+                    <p class="case"><a href="example2.html">Press Center</a></p>
+                    <p class="case"><a href="example2.html">Success Stories</a></p>
+                    <p class="case"><a href="example2.html">Contact Us</a></p>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz4'))">File Utili</div>
+                <div id="opz4" class="section">
+                    <p class="case"><a href="./downloads.html">Pagina Downloads</a></p>
+                    <p class="case"><a href="./risorse/Programma Viaggio di Istruzione Napoli.pdf" target="_blank">PDF Programma</a></p>
+                    <p class="case"><a href="./risorse/Programma Viaggio di Istruzione Napoli.docx" target="_blank">DOCX Programma</a></p>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
 
     <!--selezione dei file scaricabili-->
     <div class="elementi-scaricabili">
@@ -37,5 +93,9 @@
         <button class="downloadBUTTON" onclick="downloadFILES()">Sarica!</button>
         <a id="download" href="" download=""></a>
     </div>
+
+
+
+    
 </body>
 </html>
