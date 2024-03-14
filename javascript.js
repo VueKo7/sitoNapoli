@@ -75,5 +75,26 @@ function downloadFILES() {
             
             downloadBUTTON.click();
         }
-    } else {}
+    }
 }   
+
+
+const imgs = [
+    "./risorse/imgs/museoJago.jpg",
+    "./risorse/imgs/sanCallisto.jpg"
+];
+let img_index = 0;
+
+function switchImg(button) {
+
+    console.log(imgs.length);
+    if(button == "inc" && img_index < imgs.length-1) {
+        img_index++;
+    }
+    else if(button == "dec" && img_index > 0) {
+        img_index--;
+    }
+
+    document.getElementById("img").setAttribute("src", imgs[img_index]);
+    document.getElementById("imgLink").setAttribute("href", imgs[img_index]);
+}
