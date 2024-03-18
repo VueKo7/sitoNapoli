@@ -8,26 +8,37 @@ function display(id) {
     let opz2 = document.getElementById("opz2");
     let opz3 = document.getElementById("opz3");
     let opz4 = document.getElementById("opz4");
+    let opz5 = document.getElementById("opz5");
     
     if(id == opz1) {
         opz2.style.display = "none";
         opz3.style.display = "none";
         opz4.style.display = "none";
+        opz5.style.display = "none";
     }
     else if(id == opz2) {
         opz1.style.display = "none";
         opz3.style.display = "none";
         opz4.style.display = "none";
+        opz5.style.display = "none";
     }
     else if(id == opz3) {
         opz1.style.display = "none";
         opz2.style.display = "none";
         opz4.style.display = "none";
+        opz5.style.display = "none";
     }
-    else {//if(id == opz4) 
+    else if(id == opz4) {
         opz1.style.display = "none";
         opz2.style.display = "none";
         opz3.style.display = "none";
+        opz5.style.display = "none";
+    }
+    else {//if(id == opz5) 
+        opz1.style.display = "none";
+        opz2.style.display = "none";
+        opz3.style.display = "none";
+        opz4.style.display = "none";
     }    
     
 //l'elemento cliccato sara' seggeto solo al cambiamento di stato come interruttore
@@ -45,11 +56,11 @@ function download_selection(id) {
     let selectedIMG = document.getElementById(id);
 
     //cambio dell'opacità + impostazione percorso per download per selezione
-    if(selectedIMG.style.opacity == "0.5") { //deselezione
+    if(selectedIMG.style.opacity == "0.7") { //deselezione
         selectedIMG.style.opacity = "1";
         filesToDownload.pop(id);
     } else { //selezione
-        selectedIMG.style.opacity = "0.5";
+        selectedIMG.style.opacity = "0.7";
         filesToDownload.push(id);
     }
 

@@ -4,12 +4,76 @@
     <!--Gabriele Resconi 4AI galleria.html-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./stylesheet.css">
     <script src="./javascript.js"></script>
-    <title>Document</title>
+    <title>Galleria</title>
 </head>
 <body>
     
+    <h1 class="title">Galleria</h1>
+
+    <!--menu-bar | si ripeterà per ogni pagina forse-->
+    <table class="click-menu">
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz1'))">HomePage</div>
+                <div id="opz1" class="section">
+                    <p class="case"><a href="./homePage.html">HomePage</a></p>
+                    <p class="case"><a href="#why_naples">Perche' Napoli?</a></p>
+                    <p class="case"><a href="#viaggio">Presentazione Viaggio</a></p>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz2'))">Galleria</div>
+                <div id="opz2" class="section">
+                    <p class="case"><a href="./galleria.html">vedi Immagini</a></p>
+                </div>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz3'))">Informazioni</div>
+                <div id="opz3" class="section">
+                    <p class="case"><a href="./informazioni.html">vai alla pagina</a></p>
+                    <p class="case"><a href="./informazioni.html#sintetico">Tabella Sintetica</a></p>
+                    <p class="case"><a href="./informazioni.html#giorno1">giorno1</a></p>
+                    <p class="case"><a href="./informazioni.html#giorno2">giorno2</a></p>
+                    <p class="case"><a href="./informazioni.html#giorno3">giorno3</a></p>
+                    <p class="case"><a href="./informazioni.html#giorno4">giorno4</a></p>
+                    <p class="case"><a href="./informazioni.html#giorno5">giorno5</a></p>
+                </div>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz4'))">File Utili</div>
+                <div id="opz4" class="section">
+                    <p class="case"><a href="./downloads.html">Pagina Downloads</a></p>
+                    <p class="case"><a href="./risorse/Programma Viaggio di Istruzione Napoli.pdf" target="_blank">PDF Programma</a></p>
+                    <p class="case"><a href="./risorse/Programma Viaggio di Istruzione Napoli.docx" target="_blank">DOCX Programma</a></p>
+                </div>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <div class="opz" onclick="display(document.getElementById('opz5'))">Contatti</div>
+                <div id="opz5" class="section">
+                    <p class="case"><a href="./contatti.html">vai alla pagina</a></p>
+                    <p class="case"><a href="./contatti.html#form">mandaci un feedback!</a></p>
+                    <p class="case"><a href="./contatti.html#info">info Contatti</a></p>
+                </div>
+            </td>
+        </tr>
+    
+        </table>
+
     <div class="galleria">
         <button id="dec" onclick="switchImg('dec');">prev img</button>
 
