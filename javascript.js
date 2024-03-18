@@ -98,3 +98,31 @@ function switchImg(button) {
     document.getElementById("img").setAttribute("src", imgs[img_index]);
     document.getElementById("imgLink").setAttribute("href", imgs[img_index]);
 }
+
+
+
+function submit() {
+
+    let nome = "nome: " + document.getElementById('name').value;
+    let email = "email: " + document.getElementById('email').value;
+    let oggetto = "oggetto: " + document.getElementById('ogg').value;
+    let messaggio = "messaggio: " + document.getElementById('msg').value;
+
+    let output = nome + "\n" + email + "\n" + oggetto + "\n" + messaggio; 
+
+    alert(output);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
