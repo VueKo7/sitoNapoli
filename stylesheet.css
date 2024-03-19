@@ -196,6 +196,7 @@ button#dec, button#inc {
 /*CONTATTI*/
 div.form {
     margin: auto;
+    margin-right: 25px;
     background-color: #fdff71;
     text-align: left;
     float: right;
@@ -203,10 +204,12 @@ div.form {
     border-style: solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-color: gray;
-    margin: 100px;
 }
 h1.form {
     text-align: center;
+}
+p.form {
+    margin: 0;
 }
 input.form {
     width: 50%;
@@ -214,23 +217,25 @@ input.form {
 }
 div.contatti {
     margin-top: 100px;
-    margin-left: 350px;
-    width: 50%;
+    margin-left: 250px;
+    width: auto;
     background-color: yellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h1.contatti {
-    padding: 10px 10px 0 100px;
     border: 0px;
     border-top: 3px;
     border-color: #000000;
     border-style: solid;
+    width: 900px;
+}
+h1.contatti {
+    padding: 10px 10px 10px 100px;
+    background-image: linear-gradient(to right, #fdff71,yellow);
 }
 table.contatti {
     background-color: #fdff71;
-    width: 100%;
     padding: 10px 10px 10px 10px;
     border-collapse: collapse;
+    width: 100%;
 }
 th.contatti, td.contatti {
     padding: 15px;
@@ -240,7 +245,14 @@ th.contatti, td.contatti {
 th.contatti {
     background-color: yellow;
 }
-
+a.contatti {
+    text-decoration: none;
+    color: black;
+}
+a.contatti:hover {
+    text-decoration: underline;
+    color: red;
+}
 
 /*INFORMAZIONI*/
 thead.giornate {

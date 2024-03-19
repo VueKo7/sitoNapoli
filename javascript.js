@@ -114,10 +114,12 @@ function switchImg(button) {
 
 function submit() {
 
-    let nome = "nome: " + document.getElementById('name').value;
-    let email = "email: " + document.getElementById('email').value;
-    let oggetto = "oggetto: " + document.getElementById('ogg').value;
-    let messaggio = "messaggio: " + document.getElementById('msg').value;
+    let nome = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let oggetto = document.getElementById('ogg').value;
+    let messaggio = document.getElementById('msg').value;
+
+
 
     let output = nome + "\n" + email + "\n" + oggetto + "\n" + messaggio; 
 
@@ -125,10 +127,49 @@ function submit() {
 }
 
 
+function isEmpty(campo) {
+    let isEmpty = false;
+
+    if(string == undefined || string.length == 0)
+        isEmpty = true;
+
+    return isEmpty;
+}
 
 
+function nameCtrl() {
 
+    let nameID = document.getElementById("name");
+    let err = document.getElementById("errName");
+    let isValid = true;
 
+    try {
+        let strName = String(nameID.value);
+        if(strName.length != 0)
+        {
+            for(let i = 0; i < strName.length && isValid; i++) {
+                if((strName.charAt(i) < 'a' || strName.charAt(i) > 'z') //ignoro le minuscole
+                && (strName.charAt(i) < 'A' || strName.charAt(i) > 'Z') //ignoro le maiuscole
+                && strName.charAt(i) != ' ') { //ignoro gli spazi
+                    isValid = false;
+                }
+            }
+        }
+        else {
+            isValid = false;
+        }
+    }catch(err) {
+        alert('errore generato');
+    }
+
+    
+    if(!isValid) {
+        err.innerHTML = "nome: nome non valido!";
+    }
+    else {
+        err.innerHTML = "nome: Corretto!";
+    }
+}
 
 
 

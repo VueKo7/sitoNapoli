@@ -82,11 +82,11 @@
     <div class="form">
         <h1 class="form">FeedBack</h1>
 
-        <br>nome<br><input class="form" type="text" name="name" id="name">
-        <br>email<br><input class="form" type="email" name="email" id="email">
-        <br>oggetto<br><input class="form" type="text" name="ogg" id="ogg">
-        <br>messaggio<br><textarea class="form" name="msg" id="msg" cols="30" rows="10"></textarea>
-        <br><input class="form" type="submit" onclick="submit();" value="invia">
+        <p class="form" id="errName">nome</p><input onfocusout="nameCtrl();" class="form" type="text" name="name" id="name">
+        <p class="form">email</p><input class="form" type="email" name="email" id="email">
+        <p class="form">oggetto</p><input class="form" type="text" name="ogg" id="ogg">
+        <p class="form">messaggio</p><textarea class="form" name="msg" id="msg" cols="30" rows="10"></textarea>
+        <input class="form" type="submit" onclick="submit();" value="invia">
     </div>
 
 
@@ -118,6 +118,45 @@
                 <td class="contatti">5BI</td>
             </tr>
 
+        </table>
+
+
+        <h1 class="contatti">Agenzia</h1>
+
+        <table class="contatti">
+            <tr>
+                <th class="contatti">Agenzia</th>
+                <th class="contatti">Sito</td>
+                <th class="contatti">Maps</td>
+                <th class="contatti">Email</td>
+                <th class="contatti">Numero</td>
+            </tr>
+            <tr>
+                <td class="contatti">Lucignolo Viaggi</td>
+                <td class="contatti"><a class="contatti" href="https://www.lucignoloviaggi.it/" target="_blank">www.lucignoloviaggi.it</a></td>
+                <td class="contatti"><a class="contatti" href="https://maps.app.goo.gl/dDvoLHjeFRxhedQT6" target="_blank">posizione</a></td>
+                <td class="contatti"><a class="contatti" href="mailto:info@lucignoloviaggi.it">info@lucignoloviaggi.it</a></td>
+                <td class="contatti">0302714158</td>
+            </tr>
+        </table>
+
+        <h1 class="contatti">Hotel Ristorante</h1>
+
+        <table class="contatti">
+            <tr>
+                <th class="contatti">Agenzia</th>
+                <th class="contatti">Sito</td>
+                <th class="contatti">Maps</td>
+                <th class="contatti">Email</td>
+                <th class="contatti">Numero</td>
+            </tr>
+            <tr>
+                <td class="contatti">Hotel Ristorante Donato</td>
+                <td class="contatti"><a class="contatti" href="https://www.hotelristorantedonato.com/" target="_blank">www.hotelristorantedonato.com</a></td>
+                <td class="contatti"><a class="contatti" href="https://maps.app.goo.gl/4bjB9cyFiB12dZ8t8" target="_blank">posizione</a></td>
+                <td class="contatti"><a class="contatti" href="mailto:infohoteldonato@gmail.com">infohoteldonato@gmail.com</a></td>
+                <td class="contatti">0817132181</td>
+            </tr>
         </table>
 
     </div>
