@@ -217,7 +217,7 @@ input.form {
 }
 div.contatti {
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 15%;
     width: auto;
     background-color: yellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -253,6 +253,10 @@ a.contatti:hover {
     text-decoration: underline;
     color: red;
 }
+
+
+
+
 
 /*INFORMAZIONI*/
 thead.giornate {
@@ -306,13 +310,30 @@ p.giornata {
     font-size: 17px;
 }
 
+/*visualizzazione BoxHover*/
+.tooltipheader, .tooltipbody {
+	text-align: center;
+	font-size: 11px;
+	font-family: Verdana;
+	color: #F00036;
+	padding: 2px;
+}
 
+.tooltipheader {
+	background: whitesmoke;
+	font-weight: bold;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
 
-
-
-
-
-
+.tooltipbody {
+	background: #FCEDF0;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
 
 
 

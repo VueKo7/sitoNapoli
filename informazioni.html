@@ -5,8 +5,10 @@
     <!--Gabriele Resconi 4AI informazioni.html-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./stylesheet.css">
     <script src="./javascript.js"></script>
+    <script language='javascript' src='http://digilander.libero.it/iolecalblogspot/script/boxover.js' type='text/javascript'></script>
     <title>Informazioni</title>
 </head>
 
@@ -94,7 +96,7 @@
 <table class="click-menu">
     <tr>
         <td>
-            <div class="opz" onclick="display(document.getElementById('opz1'))">HomePage</div>
+            <div class="opz" onclick="displayOptions(document.getElementById('opz1'))">HomePage</div>
             <div id="opz1" class="section">
                 <p class="case"><a href="./homePage.html">HomePage</a></p>
                 <p class="case"><a href="#why_naples">Perche' Napoli?</a></p>
@@ -105,7 +107,7 @@
     
     <tr>
         <td>
-            <div class="opz" onclick="display(document.getElementById('opz2'))">Galleria</div>
+            <div class="opz" onclick="displayOptions(document.getElementById('opz2'))">Galleria</div>
             <div id="opz2" class="section">
                 <p class="case"><a href="./galleria.html">vedi Immagini</a></p>
             </div>
@@ -114,7 +116,7 @@
 
     <tr>
         <td>
-            <div class="opz" onclick="display(document.getElementById('opz3'))">Informazioni</div>
+            <div class="opz" onclick="displayOptions(document.getElementById('opz3'))">Informazioni</div>
             <div id="opz3" class="section">
                 <p class="case"><a href="./informazioni.html">vai alla pagina</a></p>
                 <p class="case"><a href="./informazioni.html#sintetico">Tabella Sintetica</a></p>
@@ -129,7 +131,7 @@
 
     <tr>
         <td>
-            <div class="opz" onclick="display(document.getElementById('opz4'))">File Utili</div>
+            <div class="opz" onclick="displayOptions(document.getElementById('opz4'))">File Utili</div>
             <div id="opz4" class="section">
                 <p class="case"><a href="./downloads.html">Pagina Downloads</a></p>
                 <p class="case"><a href="./risorse/Programma Viaggio di Istruzione Napoli.pdf" target="_blank">PDF Programma</a></p>
@@ -140,7 +142,7 @@
 
     <tr>
         <td>
-            <div class="opz" onclick="display(document.getElementById('opz5'))">Contatti</div>
+            <div class="opz" onclick="displayOptions(document.getElementById('opz5'))">Contatti</div>
             <div id="opz5" class="section">
                 <p class="case"><a href="./contatti.html">vai alla pagina</a></p>
                 <p class="case"><a href="./contatti.html#form">mandaci un feedback!</a></p>
@@ -163,9 +165,9 @@
             <p class="giornata">
                 La prima giornata sarà organizzata con partenza da vobarno alle 4 del mattino con tappa a Roma prevista per prima di mezzogiorno.
                 <br>
-                Il pranzo sarà al sacco in un parco pubblico sull' <a class="giornata" href="./risorse/imgs/maps/vob-roma.png" target="_blank">Appia Antica</a> che ci permetterà di riposarci dopo il lungo viaggio.
-                Recuperate le energie, la prima tappa sono le <a class="giornata" href="./risorse/imgs/maps/to-fosse.png" target="_blank">fosse Ardeatine</a>, un mausaleo che riporta alla resistenza di Roma all'occupazione tedesca
-                durante la Seconda guerra mondiale. Successivamente ci sposteremo, non troppo lontano, alle <a class="giornata" href="./risorse/imgs/maps/to-sanCallisto.png" target="_blank">Catacombe di San Callisto</a>, molto importanti
+                Il pranzo sarà al sacco in un parco pubblico sull' <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto da Vobarno ad Appia Antica] body=[<img src='./risorse/imgs/maps/vob-roma.png'>]">Appia Antica</a> che ci permetterà di riposarci dopo il lungo viaggio.
+                Recuperate le energie, la prima tappa sono le <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto da Appia Antica alle Fosse Ardeatine] body=[<img src='./risorse/imgs/maps/to-fosse.png'>]">fosse Ardeatine</a>, un mausaleo che riporta alla resistenza di Roma all'occupazione tedesca
+                durante la Seconda guerra mondiale. Successivamente ci sposteremo, non troppo lontano, alle <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dalle Fosse Ardeatine alle Catacombe di San Callisto] body=[<img src='./risorse/imgs/maps/to-sanCallisto.png'>]">Catacombe di San Callisto</a>, molto importanti
                 per quello che è stato il contesto storico religioso del luogo.
                 <br>
                 Verso le 16:00 si riprenderà il viaggio per raggiungere la nostra vera destinazione: la bella Napoli, arrivo in hotel previsto per le 20:00.
@@ -177,15 +179,15 @@
             <h1 class="giornata">Mercoledì</h1>
 
             <p class="giornata">
-                Visita in mattinata del <a class="giornata" href="./risorse/imgs/maps/" target="_blank">Museo Jago</a> alla chiesa di Sant'Aspreno ai Crociferi.
+                Visita in mattinata del <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dall'hotel al Museo Jago] body=[<img src='./risorse/imgs/maps/to-jago.png'>]">Museo Jago</a> alla chiesa di Sant'Aspreno ai Crociferi.
                 In questo museo avremo modo di ammirare le sculture su marmo dell'artista Jago, un giovane artista che rappresenta l'attualità.
-                A seguire la visita del museo <a class="giornata" href="./risorse/imgs/maps/to-sanSevero.png">Cappella San Severo</a> dove avremo l'occasione di ammirare Il "Cristo velato",
+                A seguire la visita del museo <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dal Museo Jago alla Cappella San Severo] body=[<img src='./risorse/imgs/maps/to-sanSevero.png'>]">Cappella San Severo</a> dove avremo l'occasione di ammirare Il "Cristo velato",
                 una scultura di Giuseppe Sanmartino nel 1753.
                 <br>
                 Terminato il pranzo toccherà ai Quartieri Spagnoli, visitando quindi il famosissimo murales di Maradona,
-                per poi passare alla grande <a class="giornata" href="./risorse/imgs/maps/to-piazza.png">piazza del Plebiscito</a> circondata dai più grandi edifici come il Palazzo Reale e la Basilica di San Francesco.
-                Dalla piazza si raggiunge <a class="giornata" href="./risorse/imgs/maps/to-castelOvo.png">Castel dell'Ovo</a>, il castello più antico di Napoli situato su un'isolotto, 
-                che, con la scusante di essere sul mare, ci garantirà una bella passeggiata lungomare fino a <a class="giornata" href="./risorse/imgs/maps/to-mergellina.png">Mergellina</a>.
+                per poi passare alla grande <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dalla Cappella di San Severo alla Piazza del Plebiscito] body=[<img src='./risorse/imgs/maps/to-piazza.png'>]">piazza del Plebiscito</a> circondata dai più grandi edifici come il Palazzo Reale e la Basilica di San Francesco.
+                Dalla piazza si raggiunge <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dall'hotel al Museo Jago] body=[<img src='./risorse/imgs/maps/to-castelOvo.png'>]">Castel dell'Ovo</a>, il castello più antico di Napoli situato su un'isolotto, 
+                che, con la scusante di essere sul mare, ci garantirà una bella passeggiata lungomare fino a <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto da Castel dell'Ovo a Mergellina] body=[<img src='./risorse/imgs/maps/to-mergellina.png'>]">Mergellina</a>.
             </p>
         </div>
 
@@ -194,10 +196,10 @@
             <h1 class="giornata">Giovedì</h1>
 
             <p class="giornata">
-                A colazione fatta, toccherà alla città storica rinvenuta nel 1599 dal grande storico tedesco neoclassicista, Johann Joachim Winckelmann: la città di <a class="giornata" href="https://maps.app.goo.gl/Nwtx2Bw6pTPoZhoj7" target="_blank">Pompei</a>.<br>
+                A colazione fatta, toccherà alla città storica rinvenuta nel 1599 dal grande storico tedesco neoclassicista, Johann Joachim Winckelmann: la città di <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dall'hotel a Pompei] body=[<img src='./risorse/imgs/maps/to-pompei.png'>]">Pompei</a>.<br>
                 Avremo quindi modo di osservare dall'interno una città risalente alla civiltà Romana, in seguito all'eruzione del Vesuvio.
                 <br>
-                In seguito al pranzo passaremo tutto il pomeriggio, dalle 15:00 alle 19:00, alla penisola di <a class="giornata" href="https://maps.app.goo.gl/esPbA6Na9Dp1seYx6" target="_blank">Sorrento</a> dalla quale
+                In seguito al pranzo passaremo tutto il pomeriggio, dalle 15:00 alle 19:00, alla penisola di <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto da Pompei a Sorrento] body=[<img src='./risorse/imgs/maps/to-sorrento.png'>]">Sorrento</a> dalla quale
                 potremo ammirare il mare Mediterraneo in tutto il suo splendore, e magari anche toccare.
             </p>
         </div>
@@ -206,13 +208,13 @@
             <h1 class="giornata">Venerdì</h1>
 
             <p class="giornata">
-                Questo sarà un giorno particolare: sveglia, colazione, e partenza per il <a class="giornata" href="https://maps.app.goo.gl/N1DoxYBd6g6wP63s9" target="_blank">Vesuvio</a>.
+                Questo sarà un giorno particolare: sveglia, colazione, e partenza per il <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dall'Hotel al Vesuvio] body=[<img src='./risorse/imgs/maps/to-vesuvio.png'>]">Vesuvio</a>.
                 Durante questa mattinata ci aspetterà un sentiero, il Sentiero del Gran Cono, un'escursione dalla durata di 
                 circa 3 ore su quello che è il cratere del vulcano.
                 <br>
-                Nel pomeriggio ci aspetterà un bel giro in centro, dal <a class="giornata" href="https://maps.app.goo.gl/ogRKR3TKdfAVZtb88" target="_blank">Duomo di Napoli</a>, ovvero la cattedrale metropolitana di Santa Maria Assunta,
-                alla famosissima <a class="giornata" href="./risorse/imgs/maps/to-napSott.png">Napoli Sotterranea</a> grazie alla quale sarà possibile rivivere la storia solo 
-                camminando in questi vicoli a 40 metri sotto terra, per finire nella zona di <a class="giornata" href="./risorse/imgs/maps/to-Forcella.png">Forcella</a>, importante per ricordare la morte di Annalisa durante
+                Nel pomeriggio ci aspetterà un bel giro in centro, dal <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dall'Hotel al Duomo] body=[<img src='./risorse/imgs/maps/to-duomo.png'>]">Duomo di Napoli</a>, ovvero la cattedrale metropolitana di Santa Maria Assunta,
+                alla famosissima <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dal Duomo alla Napoli Sotterranea] body=[<img src='./risorse/imgs/maps/to-napSott.png'>]">Napoli Sotterranea</a> grazie alla quale sarà possibile rivivere la storia solo 
+                camminando in questi vicoli a 40 metri sotto terra, per finire nella zona di <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dalla Napoli Sotterranea a Forcella ] body=[<img src='./risorse/imgs/maps/to-Forcella.png'>]">Forcella</a>, importante per ricordare la morte di Annalisa durante
                 avvenuta in una sparatoria fra diverse fazioni della camorra.
             </p>
         </div>
@@ -221,7 +223,7 @@
             <h1 class="giornata">Sabato</h1>
             <p class="giornata">
                 L'ultimo giorno di questa piccola grande avventura nel settentrione italiano. <br>
-                La mattina faremo visita alla <a class="giornata" href="https://maps.app.goo.gl/XDWgg3Ag5tj7g6qx9">Reggia di Caserta</a>, importante palazzo reale realizzato per volere di Carlo di Borbone.
+                La mattina faremo visita alla <a class="giornata" title="cssbody=[tooltipbody] cssheader=[tooltipheader] header=[Tragitto dall'Hotel alla Reggia di Caserta body=[<img src='./risorse/imgs/maps/to-reggia.png'>]">Reggia di Caserta</a>, importante palazzo reale realizzato per volere di Carlo di Borbone.
                 Il parco reale, come il palazzo, fù progettato da Luigi Vanvitelli, e noi, in questa esperienza, potremo vivere le bellezze che 
                 ha da offrire con i suoi 100 ettari, arricchiti con ben 60 statue e 6 fontane monumentali.
                 <br>

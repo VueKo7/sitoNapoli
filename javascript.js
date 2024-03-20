@@ -2,7 +2,7 @@
 
 
 //display delle opzioni sulle varie pagine nel menu-bar
-function display(id) {
+function displayOptions(id) {
 
     let opz1 = document.getElementById("opz1");
     let opz2 = document.getElementById("opz2");
@@ -124,12 +124,14 @@ let output = []; //dati dell'utente
 
 function submit() {
 
+    console.log(output.toString());
+
     //controllo che siano tutti riempiti i campi
     if(output.length == 4) {
-        let nome = document.getElementById(output[0]).value;
-        let email = document.getElementById(output[1]).value;
-        let ogg = document.getElementById(output[2]).value;
-        let msg = document.getElementById(output[3]).value;
+        let nome = document.getElementById(output[0].toString()).value;
+        let email = document.getElementById(output[1].toString()).value;
+        let ogg = document.getElementById(output[2].toString()).value;
+        let msg = document.getElementById(output[3].toString()).value;
         alert(nome + "\n" + email + "\n" + ogg + "\n" + msg);
     }
 }
@@ -137,7 +139,7 @@ function submit() {
 
 function nameCtrl() {
 
-    let nameID = document.getElementById("name");
+    let nameID = document.getElementById("nome");
     let err = document.getElementById("errName");
     isValid = true;
 
@@ -209,14 +211,37 @@ function emptyCtrl(ID, errID) {
 
 function setValue(isValid, err, msg) {
     
-    if(!isValid) { //false
+    if(!isValid) { //non valido
         err.innerHTML = msg + ": non valido!";
         if(output.includes(msg))
             output.pop(msg);
     }
-    else { //true
+    else { //valido
         err.innerHTML = msg;
         if(!output.includes(msg))
             output.push(msg);
     }
 }
+
+
+
+
+
+function displayImg(imgSrc) {
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
