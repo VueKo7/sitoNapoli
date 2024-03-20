@@ -112,28 +112,26 @@ function switchImg(button) {
 
 
 
+
+
+
+
+
+
+
+
+let output = []; //dati dell'utente
+
 function submit() {
 
-    let nome = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let oggetto = document.getElementById('ogg').value;
-    let messaggio = document.getElementById('msg').value;
-
-
-
-    let output = nome + "\n" + email + "\n" + oggetto + "\n" + messaggio; 
-
-    alert(output);
-}
-
-
-function isEmpty(campo) {
-    let isEmpty = false;
-
-    if(string == undefined || string.length == 0)
-        isEmpty = true;
-
-    return isEmpty;
+    //controllo che siano tutti riempiti i campi
+    if(output.length == 4) {
+        let nome = document.getElementById(output[0]).value;
+        let email = document.getElementById(output[1]).value;
+        let ogg = document.getElementById(output[2]).value;
+        let msg = document.getElementById(output[3]).value;
+        alert(nome + "\n" + email + "\n" + ogg + "\n" + msg);
+    }
 }
 
 
@@ -141,7 +139,7 @@ function nameCtrl() {
 
     let nameID = document.getElementById("name");
     let err = document.getElementById("errName");
-    let isValid = true;
+    isValid = true;
 
     try {
         let strName = String(nameID.value);
@@ -162,19 +160,63 @@ function nameCtrl() {
         alert('errore generato');
     }
 
-    
-    if(!isValid) {
-        err.innerHTML = "nome: nome non valido!";
-    }
-    else {
-        err.innerHTML = "nome: Corretto!";
-    }
+    setValue(isValid, err, "nome");
 }
 
 
+function emailCtrl() {
+    let nameID = document.getElementById("email");
+    let err = document.getElementById("errEmail");
+    isValid = true;
+
+    try {
+        let strEmail = String(nameID.value);
+        if(strEmail.length != 0)
+        {
+            if(!strEmail.includes('@') || !strEmail.includes('.')) {
+                isValid = false;
+            }
+        }
+        else {
+            isValid = false;
+        }
+    } catch(err) {
+        alert('errore generato');
+    }
+
+    setValue(isValid, err, "email");
+}
 
 
+function emptyCtrl(ID, errID) {
+
+    let nameID = document.getElementById(ID);
+    let err = document.getElementById(errID);
+    isValid = true;
+
+    try {
+        let str = String(nameID.value);
+        if(str.length == 0) {
+            isValid = false;
+        }
+    } catch(err) {
+        alert('errore generato');
+    }
+
+    setValue(isValid, err, ID);
+}
 
 
-
-
+function setValue(isValid, err, msg) {
+    
+    if(!isValid) { //false
+        err.innerHTML = msg + ": non valido!";
+        if(output.includes(msg))
+            output.pop(msg);
+    }
+    else { //true
+        err.innerHTML = msg;
+        if(!output.includes(msg))
+            output.push(msg);
+    }
+}

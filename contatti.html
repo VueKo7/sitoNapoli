@@ -83,10 +83,10 @@
         <h1 class="form">FeedBack</h1>
 
         <p class="form" id="errName">nome</p><input onfocusout="nameCtrl();" class="form" type="text" name="name" id="name">
-        <p class="form">email</p><input class="form" type="email" name="email" id="email">
-        <p class="form">oggetto</p><input class="form" type="text" name="ogg" id="ogg">
-        <p class="form">messaggio</p><textarea class="form" name="msg" id="msg" cols="30" rows="10"></textarea>
-        <input class="form" type="submit" onclick="submit();" value="invia">
+        <p class="form" id="errEmail">email</p><input onfocusout="emailCtrl();" class="form" type="email" name="email" id="email">
+        <p class="form" id="errOgg">oggetto</p><input onfocusout="emptyCtrl('oggetto', 'errOgg');" class="form" type="text" name="ogg" id="oggetto">
+        <p class="form" id="errMsg">messaggio</p><textarea onfocusout="emptyCtrl('messaggio', 'errMsg');" class="form" name="msg" id="messaggio" cols="30" rows="10"></textarea>
+        <input id="invia" class="form" type="submit" onclick="submit();" value="invia">
     </div>
 
 
