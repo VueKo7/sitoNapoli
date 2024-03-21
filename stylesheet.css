@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-image: url("./risorse/imgs/homePage_bg.png");
+    background-image: url("./risorse/imgs/galleria/sorrento.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -134,6 +134,10 @@ p.box2, p.box1 {
 /*DOWNLOAD*/
 div.scaricabili {
     background-color: #fdff71;
+    border-style: solid;
+    border-color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
     text-align: center;
     width: 50%;
     height: 100%;
@@ -143,7 +147,6 @@ div.scaricabili {
 div.elementi-scaricabili {
     margin: 50px 10% 20px 10%;
     padding: 10px;
-    
     display: flex;
 }
 img.scaricabili { 
@@ -160,18 +163,12 @@ button.downloadBUTTON {
     display: inline-block;
     font-size: 16px;
     margin: auto;
-    width: 100%;
-    height: 70px;
+    width: 20%;
 }
-div.titolo-scaricabili {
+div.downloadBUTTON {
     text-align: center;
-    background-color: greenyellow;
-    border-radius: 25px;
-    width: 50%;
     margin: auto;
-    padding: 10px;
 }
-
 
 
 /*GALLERIA*/
@@ -285,14 +282,11 @@ a.giornate:hover, a.giornata:hover {
     opacity: 0.7;
 }
 
-
 div.giornate {
     width: 70%;
     text-align: justify;
     padding: 10px;
 }
-
-
 div.giornata {
     background-color: aquamarine;
     padding: 0px 10px 5px 10px;

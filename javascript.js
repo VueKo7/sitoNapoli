@@ -56,11 +56,11 @@ function download_selection(id) {
     let selectedIMG = document.getElementById(id);
 
     //cambio dell'opacità + impostazione percorso per download per selezione
-    if(selectedIMG.style.opacity == "0.7") { //deselezione
+    if(selectedIMG.style.opacity == "0.5") { //deselezione
         selectedIMG.style.opacity = "1";
         filesToDownload.pop(id);
     } else { //selezione
-        selectedIMG.style.opacity = "0.7";
+        selectedIMG.style.opacity = "0.5";
         filesToDownload.push(id);
     }
 
@@ -76,11 +76,11 @@ function downloadFILES() {
         for(let i = 0; i < filesToDownload.length; i++) {
 
             if(filesToDownload[i] == "pdf") {
-                downloadBUTTON.setAttribute('download', "Programma Viaggio di Istruzione Napoli.pdf");
+                downloadBUTTON.setAttribute('download', "PDF Programma Viaggio di Istruzione Napoli");
                 downloadBUTTON.setAttribute('href', "./risorse/Programma Viaggio di Istruzione Napoli.pdf");
             }
             else if(filesToDownload[i] == "docx") {
-                downloadBUTTON.setAttribute('download', "Programma Viaggio di Istruzione Napoli.docx");
+                downloadBUTTON.setAttribute('download', "WORD Programma Viaggio di Istruzione Napoli");
                 downloadBUTTON.setAttribute('href', "./risorse/Programma Viaggio di Istruzione Napoli.docx");
             }
             
@@ -91,8 +91,21 @@ function downloadFILES() {
 
 
 const imgs = [
-    "./risorse/imgs/museoJago.jpg",
-    "./risorse/imgs/sanCallisto.jpg"
+    "./risorse/imgs/galleria/museoJago.jpg",
+    "./risorse/imgs/galleria/sanCallisto.jpg",
+    "./risorse/imgs/galleria/cristoVelato.jpg",
+    "./risorse/imgs/galleria/appia.jpg",
+    "./risorse/imgs/galleria/fosse.jpg",
+    "./risorse/imgs/galleria/piazza.jpg",
+    "./risorse/imgs/galleria/castelOvo.jpg",
+    "./risorse/imgs/galleria/mergellina.jpg",
+    "./risorse/imgs/galleria/pompei.jpg",
+    "./risorse/imgs/galleria/sorrento.jpg",
+    "./risorse/imgs/galleria/vesuvio.jpg",
+    "./risorse/imgs/galleria/duomo.jpg",
+    "./risorse/imgs/galleria/napSott.jpg",
+    "./risorse/imgs/galleria/forcella.jpg",
+    "./risorse/imgs/galleria/caserta.jpg"
 ];
 let img_index = 0;
 
@@ -109,12 +122,6 @@ function switchImg(button) {
     document.getElementById("img").setAttribute("src", imgs[img_index]);
     document.getElementById("imgLink").setAttribute("href", imgs[img_index]);
 }
-
-
-
-
-
-
 
 
 
@@ -222,26 +229,3 @@ function setValue(isValid, err, msg) {
             output.push(msg);
     }
 }
-
-
-
-
-
-function displayImg(imgSrc) {
-
-    
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
